@@ -87,7 +87,7 @@ for char in my_string:
 String is immutable. We cannot delete or append characters to the string.
 
 
-8)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 First, create a list of the words in the string without the extra whitespaces and newline.
 Second, unite the words into a new string without the exclamation mark.
@@ -121,3 +121,17 @@ print(captial)
 
 # Switch the case of all the letters and print the string
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Open the file string_fix.py, and complete the code so that the empty spaces and the extra symbols and characters are stripped.
+
+Expected outcome: chocolate banana ice-cream
+
+txt = ",$,,   chocolate   banana ice-cream..."
+
+# Add more options in the strip()
+txt=txt.strip("$, .")
+
+txt=" ".join(txt.split())
+print(txt)
+# Clear any whitespaces left and print the outcome
