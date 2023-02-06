@@ -77,3 +77,11 @@ print("Depending on your input we can show relevant info")
 inp = input("Enter one of the words in [OS, architecture, python]: ")
 print(ask_user_info(inp))
 
+
+6)
+
+my_string = 'Blue skies'
+for char in my_string:
+    print(char*2,end='**')
+7)
+String is immutable. We cannot delete or append characters to the string.
