@@ -85,3 +85,39 @@ for char in my_string:
     print(char*2,end='**')
 7)
 String is immutable. We cannot delete or append characters to the string.
+
+
+8)
+
+First, create a list of the words in the string without the extra whitespaces and newline.
+Second, unite the words into a new string without the exclamation mark.
+Third, replace the last word.
+Finally, capitalize only the first letters of each word.
+
+Follow the comments in the code for the exact instructions.
+
+Expected outcome: My Beautiful Garden
+
+
+movie = "My    beautiful\n laundrette!"
+
+
+
+# Create a list of the above string
+# without extra spaces nor new lines
+slist=movie.split()
+
+
+movie=" ".join(slist[:-1])+" "+slist[-1][:-1]
+
+replace=movie.replace('laundrette', 'garden')
+
+captial=replace.title()
+print(captial)
+# Use slices, concatenation and list index all in one line
+# to join the elements of the list excluding the exclamation mark
+
+# Change the word laundrette to garden
+
+# Switch the case of all the letters and print the string
+
