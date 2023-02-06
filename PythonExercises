@@ -1,0 +1,58 @@
+1)
+
+import math
+
+def is_triangle(a, b, c):
+    if math.hypot(a,b) == c:
+        return True
+    return False
+
+
+print("The program checks if three sides form a right-angled triangle.")
+inp1 = int(input("Enter first side value: "))
+inp2 = int(input("Enter second side value: "))
+inp3 = int(input("Enter third side value: "))
+print("Is triangle?", is_triangle(inp1, inp2, inp3))
+
+2)
+
+# Do any necessary imports here
+
+import math
+# Complete the function
+def circle_area(r):
+   return math.pi*r*r
+
+inp = float(input("Enter the radius of a circle:"))
+print("Area of circle =", circle_area(inp))
+
+3)
+
+from random import sample
+
+
+def cards_sample(suits, ranks):
+    deck = [str(x)+'-'+y for x in ranks for y in suits]
+    return sample(deck, 4)
+
+
+suits = ["Spades", "Hearts", "Clubs", "Diamonds"]
+ranks = [i for i in range(1, 11)] + ['Jack', 'Queen', 'King']
+
+print(cards_sample(suits, ranks))
+
+
+
+from platform import machine, system, python_version
+
+
+def platform_info():
+    user_os = system()
+    user_arch = machine()
+    user_python = python_version()
+    return (user_os, user_arch, user_python)
+
+
+print(platform_info())
+
+('Linux', 'x86_64', '3.8.0')
